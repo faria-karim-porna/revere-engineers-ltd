@@ -1,0 +1,305 @@
+/* Style for Social Navbar */
+.social-nav{
+    height: 50px;
+    background-color: #001239;
+}
+.social-nav{
+    color: #ffc907;
+}
+.social-nav-items{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.icons {
+    box-shadow: #ffc907 0px 0px 8px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 30px !important;
+    color: #ffc907 !important;
+}
+.contacts{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffc907 !important;
+}
+/* Style for Social Navbar End*/
+/* Style for Main Navbar */
+.navbar{
+    margin-top: 50px;
+}
+.img-logo {
+    width: 125px;
+}
+.pc-nav-items{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: #7a7a7b;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.pc-nav-items :hover {
+    color:  #ffffff;
+    background-color:  #0F9D58;
+    border-radius: 1rem;
+    padding: 3px 10px 3px 10px;
+}
+.mb-nav{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .pc-nav-items{
+        display: none;
+}
+    .mb-nav{
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        position: fixed;
+        font-size: 2.5rem;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        color: #7a7a7b;
+        background-color: #ffffff;
+        z-index: 2;
+    }
+    .mb-nav :hover{
+        background-color: #0F9D58;
+        color: #ffffff;
+    }
+    .mb-nav-left-items{
+        border-top-left-radius: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .mb-nav-items{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .mb-nav-right-items{
+        border-top-right-radius: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+/* Style for Main Navbar End */
+/* Style for Header Section */
+body{
+    overflow-x: hidden;
+}
+.header-section{
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.header-text{
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-section{
+        
+        background-position: right;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    .header-title{
+        font-size: 3rem;
+        font-weight: 700;
+        color:  #0F9D58;
+    }
+    .header-text{
+        margin-top: 20%;
+    }
+}
+
+/* Style for Header Section End*/
+/* Style for Animated text */
+  
+  .text-line {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 5s linear forwards, filling 5s ease-in forwards;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    letter-spacing: 10px !important;
+  }
+  
+  .text-line text {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes filling {
+    0%, 70% { fill: #ffc907; fill-opacity: 0; }
+    90%, 100% { fill: #ffc907; fill-opacity: 1; }
+  }
+  /* Style for Animated text End*/
+  /* Style for Slideshow */
+  .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* Style for Slideshow End*/
+/* Style for Services Section */
+
+.services-section{
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding-top: 250px;
+}
+.services-main-section{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.service-section-title{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 10px !important;
+    color: #001239;
+}
+.underline{
+    width: 200px;
+    border-bottom: 4px solid #ffc907;
+}
+.service-title{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 5px !important;
+    color: #001239;
+    margin-bottom: 20px;
+}
+.service-title-underline{
+    width: 200px;
+    border-bottom: 4px solid #ffc907;
+    margin-bottom: 30px; 
+}
+li{
+    line-height: 3;
+    color: #001239a6;
+    font-weight: 700;
+}
+.services-button{
+    border: 3px solid #001239;
+    color: #001239;
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px 0px 5px 0px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.services-button:hover{
+    background-color: #ffc907;
+}
+/* Style for Services Section End*/
+/* Style for Footer Section */
+.footer-section{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-main-section{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #001239a8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer-title{
+    font-size: 25px;
+    color: #ffc907;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px !important;
+    margin-bottom: 10px;
+}
+.footer-text{
+    font-size: 15px;
+    color: #ffc907;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 5px !important;
+}
